@@ -1,11 +1,18 @@
-
+import {BrowserRouter, Route, Routes} from "react-router"
+import Login from "./Pages/Login"
+import Register from "./Pages/Register"
+import { Home } from "./Pages/Home"
 
 function App() {
 
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="login" element={<Login />} />
+    <Route path="register" element={<Register />} />
+  </Routes>
+  </BrowserRouter>
   )
 }
 
