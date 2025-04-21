@@ -21,15 +21,10 @@ export const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1
-    },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    },
+    logout: (state, action)=>{
+      state.token=""
+      state.user=""
+  },
   },
   extraReducers:(builder)=>{
     builder.addCase(login.pending, (state)=>{
@@ -44,6 +39,6 @@ export const authSlice = createSlice({
   }
 })
 
-export const { increment, decrement, incrementByAmount } = authSlice.actions
+export const { logout } = authSlice.actions
 
 export default authSlice.reducer
