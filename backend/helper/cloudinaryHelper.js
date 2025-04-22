@@ -13,7 +13,6 @@ export const uploadImageCloudanary = async (filePath, foldername) => {
       folder: foldername,
     });
 
-    try {
       
 
     return {
