@@ -1,7 +1,7 @@
 import { LoginForm } from "@/components/login-form"
 import { useState } from "react"
 import { useDispatch } from "react-redux"
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
 import { login } from "../features/auth/authSlice.js"
 

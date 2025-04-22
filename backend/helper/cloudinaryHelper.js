@@ -1,5 +1,5 @@
 import { v2 as cloudinary } from "cloudinary";
-import fs from "fs";
+
 // Configuration
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
@@ -14,10 +14,7 @@ export const uploadImageCloudanary = async (filePath, foldername) => {
     });
 
     try {
-      fs.unlinkSync(filePath);
-    } catch (error) {
-      console.log("Failed to delete image from server");
-    }
+      
 
     return {
       secure_url: result.secure_url,

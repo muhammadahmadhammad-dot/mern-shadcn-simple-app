@@ -58,6 +58,10 @@ export const create = async (req, res) => {
       description,
       status,
       author,
+      featureImage : {
+        secure_url,
+        public_id,
+      }
     });
 
     return res

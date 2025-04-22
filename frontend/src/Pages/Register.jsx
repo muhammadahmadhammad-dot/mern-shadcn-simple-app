@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { RegisterForm } from "../components/register-form"
-import { useNavigate } from "react-router"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import {toast} from "react-toastify"
 
