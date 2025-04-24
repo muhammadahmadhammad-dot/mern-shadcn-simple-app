@@ -49,7 +49,7 @@ export const create = async (req, res) => {
         return res.status(400).json({ error:secure_url });
     }
 
-    const { title, slug, shortDescription, description, status, author } = data;
+    const { title, slug, shortDescription, description, status  } = data;
 
     const post = await postModel.create({
       title,
@@ -57,7 +57,7 @@ export const create = async (req, res) => {
       shortDescription,
       description,
       status,
-      author,
+      author:req.user._id,
       featureImage : {
         secure_url,
         public_id,

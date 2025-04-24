@@ -67,7 +67,7 @@ export function PostCreateForm({
                   <p className="text-red-500">{errors?.slug._errors[0]}</p>
                 )}
               </div>
-              <div className="grid gap-2">
+              {/* <div className="grid gap-2">
                 <Label htmlFor="author">Author</Label>
                 <Input
                   id="author"
@@ -80,7 +80,7 @@ export function PostCreateForm({
                 {errors?.author && (
                   <p className="text-red-500">{errors?.author._errors[0]}</p>
                 )}
-              </div>
+              </div> */}
               <div className="grid gap-2">
                 <Label htmlFor="image">Featured Image</Label>
                 <Input

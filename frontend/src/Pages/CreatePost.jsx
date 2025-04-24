@@ -11,7 +11,7 @@ const CreatePost = () => {
       const [inputs, setInputs] = useState({
         title:'',
         slug:'',
-        author:'',
+        // author:'',
         shortDescription:'',
         description:'',
         status:'',
@@ -20,7 +20,7 @@ const CreatePost = () => {
       const [errors, setErrors] = useState({
         title:'',
         slug:'',
-        author:'',
+        // author:'',
         shortDescription:'',
         description:'',
         status:'',
@@ -50,7 +50,7 @@ const CreatePost = () => {
        formData.append("slug", inputs.slug);
        formData.append("shortDescription", inputs.shortDescription);
        formData.append("description", inputs.description);
-       formData.append("author", inputs.author);
+      //  formData.append("author", inputs.author);
        formData.append("status", inputs.status);
        if (inputs.image) formData.append("featureImage", inputs.image);
 
