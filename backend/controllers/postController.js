@@ -57,7 +57,7 @@ export const create = async (req, res) => {
       shortDescription,
       description,
       status,
-      author:req.user._id,
+      author:req.user.id,
       featureImage : {
         secure_url,
         public_id,
